@@ -1,6 +1,5 @@
 /* File: font.css */
 @font-face {
     font-family: 'Back to School';
-    src: local('Back to School'),
-         url('Back_to_School.tff') format('tff'),
+    src: url('Back_to_School.tff') format('tff');
 }

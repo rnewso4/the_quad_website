@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -33,17 +32,17 @@ p {
 
 .mainContainer {
   display: flex;
-  height: 650px;
-  margin: 50px auto;
+  height: 800px;
 }
 
 .leftContainer {
   flex: 1;
   overflow: auto;
+  margin: 50px auto;
 }
 
 .leftContainer label {
-  margin: 30px 0px 10px 125px;
+  margin: 40px 0px 10px 125px;
   display: block;
   font-family: 'Helvetica Neue';
   color: #7B7B7B;
@@ -74,9 +73,16 @@ p {
   
 }
 
+.leftContainer img {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .leftContainer .bottomTag {
   display: flex;
-  margin-top: 100px;
+  margin-top: 115px;
   margin-left: 175px;
 }
 
@@ -92,4 +98,19 @@ p {
   flex: 1.25;
   background-color: #9A9A9A;
   overflow: auto;
+}
+
+#couch {
+  display: block;
+  margin-top: 130px;
+  width: 600px;
+  margin-left: 60px;
+}
+
+#welcome {
+  display: block;
+  margin-top: 150px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }

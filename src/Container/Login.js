@@ -1,9 +1,12 @@
+import loginDesign from '../Images/undraw_Chilling_re_4iq9.svg'
+import welcome from '../Images/WELCOME.png'
+import quad from '../Images/Quad_Logo.png'
+
 const Login = () => {
     return (
         <>
             <div className='leftContainer'>
-                <h1 className='header1'>THE</h1>
-                <h1 className='header2'>QUAD</h1>
+                <img src={quad} alt='Quad logo' />
                 <label>Email</label>
                 <input 
                 type='email' 
@@ -25,7 +28,8 @@ const Login = () => {
                 </div>
             </div>
             <div className='rightContainer'>
-
+                <img id='welcome' src={welcome} alt='Welcome' />
+                <img id='couch' src={loginDesign} alt='People sitting on couch'/>
             </div>
         </>
     )
