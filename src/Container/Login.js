@@ -14,6 +14,15 @@ const Login = () => {
                 type='password' 
                 placeholder='Password'
                 />
+                <p className="specialP">Forgot your password?</p>
+                <div className='vertical-center'>
+                <button>LOGIN</button>
+                </div>
+                <div className='bottomTag'>
+                    <p>Don't have an account? &nbsp;
+                    <span className='specialP2'>Register </span> 
+                    </p>
+                </div>
             </div>
             <div className='rightContainer'>
 

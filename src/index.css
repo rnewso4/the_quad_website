@@ -8,9 +8,22 @@
 h1 {
   margin: 20px auto;
   font-family: Back to School;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   color: #853DD9;
+}
+
+p {
+ font-family: 'Helvetica Neue';
+}
+
+.specialP {
+  color: #853DD9;
+  text-decoration: underline;
+  margin: 20px 0px 20px 300px;
+  font-weight: bold;
+  font-size: 15px;
+
 }
 
 .header1{
@@ -20,7 +33,7 @@ h1 {
 
 .mainContainer {
   display: flex;
-  height: 400px;
+  height: 650px;
   margin: 50px auto;
 }
 
@@ -30,8 +43,7 @@ h1 {
 }
 
 .leftContainer label {
-  margin-left: 150px;
-  margin-bottom: 10px;
+  margin: 30px 0px 10px 125px;
   display: block;
   font-family: 'Helvetica Neue';
   color: #7B7B7B;
@@ -40,11 +52,40 @@ h1 {
 }
 
 .leftContainer input {
-  margin-left: 150px;
-  width: 300px;
-  height: 40px;
+  margin-left: 125px;
+  width: 325px;
+  height: 50px;
   padding: 3px 7px;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: 'Helvetica Neue';
+}
+
+.leftContainer button {
+  width: 325px;
+  height: 40px;
+  background-color: #853DD9;
+  color: #F0F0F0;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-left: 125px;
+  font-size: 18px;
+  
+}
+
+.leftContainer .bottomTag {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 175px;
+}
+
+.specialP2 {
+  color: #853DD9;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 15px;
+
 }
 
 .rightContainer {
