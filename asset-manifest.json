@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/the_quad_website/static/css/main.a617e044.chunk.css",
+    "main.js": "/the_quad_website/static/js/main.98c1fa7f.chunk.js",
+    "main.js.map": "/the_quad_website/static/js/main.98c1fa7f.chunk.js.map",
+    "runtime-main.js": "/the_quad_website/static/js/runtime-main.fd18b300.js",
+    "runtime-main.js.map": "/the_quad_website/static/js/runtime-main.fd18b300.js.map",
+    "static/js/2.bbeabbf6.chunk.js": "/the_quad_website/static/js/2.bbeabbf6.chunk.js",
+    "static/js/2.bbeabbf6.chunk.js.map": "/the_quad_website/static/js/2.bbeabbf6.chunk.js.map",
+    "static/js/3.fc60a3c9.chunk.js": "/the_quad_website/static/js/3.fc60a3c9.chunk.js",
+    "static/js/3.fc60a3c9.chunk.js.map": "/the_quad_website/static/js/3.fc60a3c9.chunk.js.map",
+    "index.html": "/the_quad_website/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/the_quad_website/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.bbeabbf6.chunk.js.LICENSE.txt": "/the_quad_website/static/js/2.bbeabbf6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/the_quad_website/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd18b300.js",
+    "static/js/2.bbeabbf6.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.98c1fa7f.chunk.js"
+  ]
+}
