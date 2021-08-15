@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/the_quad_website/static/css/main.f374bb1e.chunk.css",
-    "main.js": "/the_quad_website/static/js/main.57880a13.chunk.js",
-    "main.js.map": "/the_quad_website/static/js/main.57880a13.chunk.js.map",
+    "main.css": "/the_quad_website/static/css/main.fc283c06.chunk.css",
+    "main.js": "/the_quad_website/static/js/main.13e62479.chunk.js",
+    "main.js.map": "/the_quad_website/static/js/main.13e62479.chunk.js.map",
     "runtime-main.js": "/the_quad_website/static/js/runtime-main.eb1e7de2.js",
     "runtime-main.js.map": "/the_quad_website/static/js/runtime-main.eb1e7de2.js.map",
     "static/js/2.86155a1d.chunk.js": "/the_quad_website/static/js/2.86155a1d.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.562cae67.chunk.js": "/the_quad_website/static/js/3.562cae67.chunk.js",
     "static/js/3.562cae67.chunk.js.map": "/the_quad_website/static/js/3.562cae67.chunk.js.map",
     "index.html": "/the_quad_website/index.html",
-    "static/css/main.f374bb1e.chunk.css.map": "/the_quad_website/static/css/main.f374bb1e.chunk.css.map",
+    "static/css/main.fc283c06.chunk.css.map": "/the_quad_website/static/css/main.fc283c06.chunk.css.map",
     "static/js/2.86155a1d.chunk.js.LICENSE.txt": "/the_quad_website/static/js/2.86155a1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eb1e7de2.js",
     "static/js/2.86155a1d.chunk.js",
-    "static/css/main.f374bb1e.chunk.css",
-    "static/js/main.57880a13.chunk.js"
+    "static/css/main.fc283c06.chunk.css",
+    "static/js/main.13e62479.chunk.js"
   ]
 }
