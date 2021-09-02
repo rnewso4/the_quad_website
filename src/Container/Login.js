@@ -3,10 +3,12 @@ import welcome from '../Images/WELCOME.png'
 import quad from '../Images/Quad_Logo.png'
 import { VscAccount } from "react-icons/vsc";
 import { BsFillLockFill } from "react-icons/bs";
+import { useHistory } from 'react-router-dom'
 
 const Login = () => {
+    const history = useHistory();
     return (
-        <>
+        <div id='mainContainer'>
             <div className='leftContainer'>
                 <img src={quad} alt='Quad logo' />
                 <form className='loginForm'>
@@ -24,7 +26,7 @@ const Login = () => {
                         <a href='#' id="FPassword">Forgot your password?</a>
                     </div>
                     <div className='vertical-center'>
-                        <button>LOGIN</button>
+                        <button onClick={() => history.push('/homepage')}>LOGIN</button>
                     </div>
                 </form>
                 <div className='bottomTag'>
@@ -36,7 +38,7 @@ const Login = () => {
                 <img id='welcome' src={welcome} alt='Welcome' />
                 <img id='couch' src={loginDesign} alt='People sitting on couch'/>
             </div>
-        </>
+        </div>
     )
 }
 

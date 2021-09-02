@@ -13,7 +13,7 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 });
 
 exports.getEvents = functions.https.onRequest((req, res) => {
-    admin.firestore().collection('events').get()
+    admin.firestore().collection('sidebar').get()
     .then((data) => {
         let events = [];
         data.forEach(doc => {

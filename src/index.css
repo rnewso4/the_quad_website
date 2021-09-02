@@ -5,7 +5,13 @@
   font-family: 'Helvetica Neue';
 }
 
-.mainContainer {
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#mainContainer {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -53,6 +59,10 @@
   margin-right: 8.5rem;
   margin-top: 1.5rem;
   display: inline;
+}
+
+.leftContainer button:hover {
+  cursor: pointer;
 }
 
 .leftContainer button {
@@ -111,4 +121,310 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 11rem;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-height: 3rem;
+  border-bottom: 0.15em solid #d1d1d1;
+}
+
+#navbar li{
+  float: left;
+  font-size: 1rem;
+}
+
+#navbar li a{
+  display: block;
+  color: #606060;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover{
+  background-color: lightgrey;
+}
+
+#navbar img{
+  max-height: 2rem;
+  margin: 0.5rem auto;
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+
+#navbar input{
+  width: 30rem;
+  height: 1.85rem;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  margin-left: 4rem;
+}
+
+#navbar button{
+  width: 2rem;
+  height: 1.85rem;
+  margin-right: 2rem;
+  margin: 0.5rem auto;
+}
+
+.sidebarMin .SideIconsSelected {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 15%;
+  color: #853DD9;
+}
+
+.sidebarMax .SideIconsSelected {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+  color: #853DD9;
+}
+
+.sidebarMin .SideIcons {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 15%;
+}
+
+.sidebarMax .SideIcons {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.sidebarMax {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 10rem;
+  background-color: #DBDBDB;
+  transition: all 0.5s ease;
+}
+
+.sidebarMax .linksNameSelected {
+  color: #853DD9;
+  font-weight: bold;
+}
+
+.sidebarMin .linksNameSelected {
+  display: none;
+}
+
+.sidebarMin .linksName {
+  display: none;
+}
+
+.sidebarMin {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  padding: 0.25rem 0.5rem;
+  height: 100%;
+  width: 3rem;
+  background-color: #DBDBDB;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.sidebarMax #close {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1%;
+  position: relative;
+  float: left;
+  color: #494949;
+}
+
+.sidebarMin #menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.25rem;
+  margin-bottom: 75%;
+  color: #494949;
+}
+
+#menu:hover{
+  cursor: pointer;
+}
+
+#close:hover{
+  cursor: pointer;
+}
+
+.sidebarMax li{
+  position: relative;
+  height: 5rem;
+  list-style: none;
+  padding-left: 1.5rem;
+  line-height: 5rem;
+  transition: all 0.4s ease;
+}
+
+.sidebarMin li{
+  position: relative;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  list-style: none;
+  transition: all 0.4s ease;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin: 0.5rem 0px;
+}
+
+/*need to change color of friends icon to the correct color*/
+.navList li a{
+  color: #606060;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navList li:hover{
+  background-color: white;
+}
+
+.homepage #mapMin{
+  margin-left: 3rem;
+  transition: all 0.5s ease;
+}
+
+.homepage #mapMax{
+  margin-left: 10rem;
+  transition: all 0.5s ease;
+}
+
+.temp{
+  text-align: center;
+  color: black;
+}
+
+.sidebarMax #profile {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #494949;
+  color: #494949;
+  background-color: white;
+  position: relative;
+  float: right;
+  border-width: 0.15rem;
+  margin-right: 13%;
+  text-align: center;
+  line-height: 2.6rem;
+}
+
+.sidebarMin #profile { 
+  display: none;
+}
+
+.sidebarMax .sidebarTop {
+  margin-bottom: 0rem;
+}
+
+.sidebarMax #menu {
+  display: none;
+}
+
+.sidebarMin #close {
+  display: none;
+}
+
+.sidebarMax #bottomTagSidebar {
+  color: #606060;
+  display: flex;
+  text-decoration: none;
+  flex-grow: 1;
+  font-size: .75rem;
+  align-items: flex-end;
+  margin-bottom: 3.3rem;
+  padding-left: 0.5rem;
+}
+
+.sidebarMax #contactLink{
+  color: #494949;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+#contactLink:hover{
+  text-decoration: underline;
+}
+
+.sidebarMax #settingsIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  float: left;
+  color: #494949;
+}
+
+.sidebarMax #settingsIconSelected {
+  height: 1.5rem;
+  width: 1.5rem;
+  float: left;
+  color: #853DD9;
+}
+
+.sidebarMin #bottomTagSidebar {
+  display: flex;
+  flex-grow: 1;
+  font-size: .75rem;
+  align-items: flex-end;
+  align-self: center;
+  margin-bottom: 2.5rem;
+}
+
+.sidebarMin #bottomTagSidebar div {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  list-style: none;
+  transition: all 0.4s ease;
+  text-align: center;
+  padding-top: 0.25rem;
+  margin: 0.5rem 0px;
+}
+
+.sidebarMin #settingsIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #494949;
+}
+
+.sidebarMin #settingsIconSelected {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #853DD9;
+}
+
+.sidebarMin #bottomTagSidebar div:hover {
+  background-color: white;
+}
+
+.sidebarMin #contactLink{
+  display: none;
+}
+
+#eventContainer {
+  margin-left: 10rem;
+
+}
+
+.eventItems {
+  width: 250px;
+  height: 200px;
+  border: 3px solid black;
+}
+
+#item1 {
+
 }
