@@ -2,14 +2,13 @@ import Navbar from "./Navbar"
 import Sidebar from './Sidebar'
 import { useState } from 'react'
 
-const Friends = ({ isSidebarMax, isSelected }) => {
+const Friends = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
 
     isSelected[0] = false;
     isSelected[1] = false;
     isSelected[2] = true;
     isSelected[3] = false;
 
-    const [sidebarStyle, setsidebarStyle] = useState(isSidebarMax)
     const onClick = () => {
         return setsidebarStyle(!sidebarStyle)
     }

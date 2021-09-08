@@ -124,12 +124,15 @@
 }
 
 #navbar {
+  position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: auto;
-  max-height: 3rem;
+  height: 3rem;
+  width: 100vw;
   border-bottom: 0.15em solid #d1d1d1;
+  background-color: white;
 }
 
 #navbar li{
@@ -198,6 +201,7 @@
 }
 
 .sidebarMax {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -221,6 +225,7 @@
 }
 
 .sidebarMin {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -291,11 +296,13 @@
 }
 
 .homepage #mapMin{
+  margin-top: 3rem;
   margin-left: 3rem;
   transition: all 0.5s ease;
 }
 
 .homepage #mapMax{
+  margin-top: 3rem;
   margin-left: 10rem;
   transition: all 0.5s ease;
 }
@@ -414,17 +421,48 @@
   display: none;
 }
 
-#eventContainer {
+#eventMax {
+  min-height: 100vh;
+  display: inline-block;
   margin-left: 10rem;
-
+  background: rgb(180,149,216);
+  background: linear-gradient(315deg, rgba(180,149,216,1) 0%, rgba(255,255,255,1) 100%);
+  text-align: center;
+  transition: all 0.5s ease;
 }
 
-.eventItems {
-  width: 250px;
-  height: 200px;
+#eventMin {
+  min-height: 100vh;
+  display: inline-block;
+  margin-left: 3rem;
+  background: rgb(180,149,216);
+  background: linear-gradient(315deg, rgba(180,149,216,1) 0%, rgba(255,255,255,1) 100%);
+  text-align: start;
+  transition: all 0.5s ease;
+}
+
+#eventMax .eventItems {
+  width: 350px;
+  height: 240px;
   border: 3px solid black;
+  display: inline-block;
+  margin: 40px 30px;
+  border-radius: 10%;
 }
 
-#item1 {
+#eventMin .eventItems {
+  width: 300px;
+  height: 240px;
+  border: 3px solid black;
+  display: inline-block;
+  margin: 20px 20px;
+  border-radius: 10%;
+}
 
+#eventMax #item1 {
+  margin-top: 8.5rem;
+}
+
+#eventMin #item1 {
+  margin-top: 5rem;
 }
