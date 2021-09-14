@@ -125,31 +125,16 @@
 
 #navbar {
   position: fixed;
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: -moz-hidden-unscrollable;
   height: 3rem;
   width: 100vw;
   border-bottom: 0.15em solid #d1d1d1;
   background-color: white;
-}
-
-#navbar li{
-  float: left;
-  font-size: 1rem;
-}
-
-#navbar li a{
-  display: block;
-  color: #606060;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#navbar li a:hover{
-  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightcyan;
 }
 
 #navbar img{
@@ -159,12 +144,39 @@
   margin-right: 3rem;
 }
 
+#navbarLeft div{
+  padding: 0 1rem;
+}
+
+#navbar a{
+  color: #606060;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+#navbarLeft div:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+#navbarRight {
+  padding: 0 1rem;
+}
+
+#navbarRight:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+#navbarLeft {
+  display: flex;
+}
+
 #navbar input{
   width: 30rem;
-  height: 1.85rem;
+  min-height: 1.85rem;
   margin: 0.5rem auto;
   font-size: 1rem;
-  margin-left: 4rem;
 }
 
 #navbar button{
@@ -633,4 +645,10 @@
 #goingyes #goingInactive {
   display: none;
   transition: all 0.5s ease;
+}
+
+.temp {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 2.5rem;
 }

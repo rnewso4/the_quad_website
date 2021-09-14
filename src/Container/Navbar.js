@@ -4,14 +4,24 @@ import { BsSearch } from "react-icons/bs";
 const Navbar = () => {
     return (
         <>
-            <ul id="navbar">
-                <li> <img src={ Q } alt='letter Q' /></li>
-                <li><a href="#about">Find Events</a></li>
-                <li><a href="#about">Meet Friends</a></li>
-                <input type='search' placeholder='Search' style={{float:"center"}}/>
-                <button><BsSearch/></button>
-                <li style={{float:"right"}}><a class="active" href="#about">Your Account</a></li>
-            </ul>
+            <div id='navbar'>
+                <div id='navbarLeft'>
+                    <img src={ Q } alt='letter Q' />
+                    <div>
+                        <a href="#">Find Events</a>
+                    </div>
+                    <div>
+                        <a href="#">Meet Friends</a>
+                    </div>
+                </div>
+                <div>
+                    <input type='text' placeholder='Search'/>
+                    <button><BsSearch/></button>
+                </div>
+                <div id='navbarRight'>
+                    <a href="#about">Your Account</a>
+                </div>
+            </div>
         </>
     )
 }
