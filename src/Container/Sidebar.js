@@ -20,7 +20,7 @@ const Sidebar = ({ isSelected, onClick, sidebarStyle}) => {
                     <VscMenu id='menu'/>
                     <IoCloseOutline id='close' />
                 </span>
-                <div id='profile'>BN</div>
+                <div className='profile'>BN</div>
             </div>
             <ul class="navList">
                 <li>

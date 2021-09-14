@@ -1,7 +1,14 @@
 import Navbar from "./Navbar"
 import Sidebar from './Sidebar'
 import map from '../Images/LSUMap.png'
-import { useState } from 'react'
+
+/**
+ * 
+ * This page uses the Google Maps api to display events happening on campus and 
+ * also allows users to pick their location to add a new event
+ * @param {*} param0 
+ * @returns 
+ */
 
 const Homepage = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
 

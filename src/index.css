@@ -299,12 +299,14 @@
   margin-top: 3rem;
   margin-left: 3rem;
   transition: all 0.5s ease;
+  width: 110vw;
 }
 
 .homepage #mapMax{
   margin-top: 3rem;
   margin-left: 10rem;
   transition: all 0.5s ease;
+  width: 110vw;
 }
 
 .temp{
@@ -312,7 +314,7 @@
   color: black;
 }
 
-.sidebarMax #profile {
+.sidebarMax .profile {
   width: 2.8rem;
   height: 2.8rem;
   border-style: solid;
@@ -328,7 +330,7 @@
   line-height: 2.6rem;
 }
 
-.sidebarMin #profile { 
+.sidebarMin .profile { 
   display: none;
 }
 
@@ -427,7 +429,7 @@
   margin-left: 10rem;
   background: rgb(180,149,216);
   background: linear-gradient(315deg, rgba(180,149,216,1) 0%, rgba(255,255,255,1) 100%);
-  text-align: center;
+  text-align: start;
   transition: all 0.5s ease;
 }
 
@@ -442,27 +444,193 @@
 }
 
 #eventMax .eventItems {
-  width: 350px;
-  height: 240px;
-  border: 3px solid black;
+  width: 22rem;
+  height: 15rem;
+  border: 0.15rem solid black;
   display: inline-block;
-  margin: 40px 30px;
+  margin: 2rem 2.3rem;
   border-radius: 10%;
+  overflow: hidden;
+  background-color: white;
 }
 
 #eventMin .eventItems {
-  width: 300px;
-  height: 240px;
-  border: 3px solid black;
+  width: 18.5rem;
+  height: 15rem;
+  border: 0.15rem solid black;
   display: inline-block;
-  margin: 20px 20px;
+  margin: 2rem 1.6rem;
   border-radius: 10%;
+  background-color: white;
 }
 
 #eventMax #item1 {
-  margin-top: 8.5rem;
+  margin-top: 5rem;
 }
 
 #eventMin #item1 {
   margin-top: 5rem;
+}
+
+#eventMax #timeAndName {
+  height: 4rem;
+  padding: 0% 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#eventMax #timeAndName p{
+  font-size: 2rem;
+}
+
+#eventMax .profile {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #494949;
+  color: #494949;
+  position: relative;
+  float: right;
+  border-width: 0.15rem;
+  text-align: center;
+  line-height: 2.6rem;
+  margin-left: 40%;
+}
+
+#eventMax #title {
+  height: 3rem;
+  overflow: hidden;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+#eventMax #detailedText {
+  height: 5.5rem;
+  overflow: scroll;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+#eventMax #bottomTag {
+  height: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 0% 1rem;
+}
+
+#eventMax .eventIcons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#eventMin .eventIcons {
+  width: 1.4em;
+  height: 1.4rem;
+}
+
+#eventMax .eventIcons:hover{
+  cursor: pointer;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+#eventMin .eventIcons:hover{
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+#eventMax .IconAndText p {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.IconAndText {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#eventMin #timeAndName {
+  height: 3.5rem;
+  padding: 0% 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#eventMin #timeAndName p{
+  font-size: 2rem;
+}
+
+#eventMin .profile {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #494949;
+  color: #494949;
+  position: relative;
+  float: right;
+  border-width: 0.15rem;
+  text-align: center;
+  line-height: 2.6rem;
+  margin-left: 30%;
+}
+
+#eventMin #title {
+  height: 3rem;
+  overflow: hidden;
+  text-align: center;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+#eventMin #detailedText {
+  height: 5.5rem;
+  overflow: scroll;
+  word-wrap: break-word;
+  font-size: 0.8rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+#eventMin #bottomTag {
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 0% 1rem;
+}
+
+#eventMin .IconAndText p {
+  margin-left: 0.3rem;
+}
+
+#heartno #heartActive {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#heartyes #heartInactive {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#goingno #goingActive {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#goingyes #goingInactive {
+  display: none;
+  transition: all 0.5s ease;
 }

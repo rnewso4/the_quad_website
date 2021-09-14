@@ -1,6 +1,5 @@
 import Navbar from "./Navbar"
 import Sidebar from './Sidebar'
-import { useState } from 'react'
 
 const Friends = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
 

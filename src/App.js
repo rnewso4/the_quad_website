@@ -18,11 +18,19 @@ function App() {
           <Route path="/" exact component={ Login }/>
           <Route path="/the_quad_website" component={ Login }/>
           <Route path="/login" component={ Login }/>
-          <Route path="/homepage" render={(props) => (<Homepage sidebarStyle={sidebarStyle} isSelected={isSelected} setsidebarStyle={setsidebarStyle}/>)} />
-          <Route path="/events" render={(props) => (<Events sidebarStyle={sidebarStyle} isSelected={isSelected} setsidebarStyle={setsidebarStyle}/>)} />
-          <Route path="/friends" render={(props) => (<Friends sidebarStyle={sidebarStyle} isSelected={isSelected} setsidebarStyle={setsidebarStyle}/>)} />
+          <Route path="/homepage" render={(props) => (<Homepage sidebarStyle={sidebarStyle} 
+            isSelected={isSelected} 
+            setsidebarStyle={setsidebarStyle}/>)} />
+          <Route path="/events" render={(props) => (<Events sidebarStyle={sidebarStyle} 
+            isSelected={isSelected} 
+            setsidebarStyle={setsidebarStyle}/>)} />
+          <Route path="/friends" render={(props) => (<Friends sidebarStyle={sidebarStyle} 
+            isSelected={isSelected} 
+            setsidebarStyle={setsidebarStyle}/>)} />
+          <Route path="/settings" render={(props) => (<Settings sidebarStyle={sidebarStyle} 
+            isSelected={isSelected} 
+            setsidebarStyle={setsidebarStyle}/>)} />
           <Route path="/contact" render={(props) => (<ContactUs isSelected={isSelected}/>)} />
-          <Route path="/settings" render={(props) => (<Settings sidebarStyle={sidebarStyle} isSelected={isSelected} setsidebarStyle={setsidebarStyle}/>)} />
         </Switch>
       </>
     </Router>
