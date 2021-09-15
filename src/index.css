@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue';
+  font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -177,6 +177,7 @@
   min-height: 1.85rem;
   margin: 0.5rem auto;
   font-size: 1rem;
+  padding-left: 0.5rem;
 }
 
 #navbar button{

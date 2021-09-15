@@ -16,7 +16,6 @@ const Navbar = () => {
                 </div>
                 <div>
                     <input type='text' placeholder='Search'/>
-                    <button><BsSearch/></button>
                 </div>
                 <div id='navbarRight'>
                     <a href="#about">Your Account</a>
