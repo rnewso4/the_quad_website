@@ -44,6 +44,12 @@
   height: 3rem;
   color: #7B7B7B;
   font-size: 1rem;
+  border: 0.1em solid #707070;
+  padding-left: 0.3rem;
+}
+
+.loginForm input:focus {
+  outline: none;
 }
 
 #Register {
@@ -56,6 +62,7 @@
   font-weight: bold;
   font-size: .75rem;
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
   float: right;
 
 }
@@ -65,7 +72,6 @@
 }
 
 .leftContainer button {
-  margin-top: 2rem;
   width: 22rem;
   height: 3rem;
   border-radius: 30rem;
@@ -76,10 +82,8 @@
 }
 
 .leftContainer img {
-
   width: 10rem;
   align-self: center;
-
 }
 
 .bottomTag {
@@ -129,7 +133,7 @@
   position: fixed;
   margin: 0;
   padding: 0;
-  overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
   height: 3rem;
   width: 100vw;
   border-bottom: 0.15em solid #d1d1d1;
@@ -148,6 +152,7 @@
 
 #navbarLeft div{
   padding: 0 1rem;
+  transition: all 0.3s ease;
 }
 
 #navbar a{
@@ -163,6 +168,7 @@
 
 #navbarRight {
   padding: 0 1rem;
+  transition: all 0.3s ease;
 }
 
 #navbarRight:hover{
@@ -180,6 +186,14 @@
   margin: 0.5rem auto;
   font-size: 1rem;
   padding-left: 0.5rem;
+  border-radius: 30rem;
+  border: 0.15em solid #5e5e5e;
+  font-size: 0.9rem;
+  color: #5e5e5e;
+}
+
+#navbar input:focus{
+  outline:none;
 }
 
 #navbar button{
