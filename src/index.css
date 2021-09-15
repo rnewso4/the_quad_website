@@ -32,7 +32,7 @@
 
 .loginForm {
   margin-top: 1.5em;
-  padding-left: 7rem;
+  align-self: center;
 }
 
 #label2 {
@@ -55,10 +55,9 @@
   color: #853DD9;
   font-weight: bold;
   font-size: .75rem;
-  float: right;
-  margin-right: 8.5rem;
   margin-top: 1.5rem;
-  display: inline;
+  float: right;
+
 }
 
 .leftContainer button:hover {
@@ -109,11 +108,14 @@
 #couch {
   display: flex;
   flex-grow: 1;
-  width: 36rem;
-  margin-left: 5rem;
-  align-items: flex-end;
-  margin-top: 6rem;
   overflow: auto;
+  align-items: flex-end;
+  align-self: center;
+  padding-bottom: 1rem;
+}
+
+#couch img{
+  width: 36rem;
 }
 
 #welcome {

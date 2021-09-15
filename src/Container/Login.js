@@ -36,7 +36,9 @@ const Login = () => {
             </div>
             <div className='rightContainer'>
                 <img id='welcome' src={welcome} alt='Welcome' />
-                <img id='couch' src={loginDesign} alt='People sitting on couch'/>
+                <div id='couch'>
+                    <img src={loginDesign} alt='People sitting on couch'/>
+                </div>
             </div>
         </div>
     )
