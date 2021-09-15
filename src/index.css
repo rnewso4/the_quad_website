@@ -608,7 +608,7 @@
 
 #eventMin #detailedText {
   height: 5.5rem;
-  overflow: scroll;
+  overflow: hidden;
   word-wrap: break-word;
   font-size: 0.8rem;
   padding-right: 1rem;
