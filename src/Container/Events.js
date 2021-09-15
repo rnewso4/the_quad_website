@@ -14,6 +14,8 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
     const [comments, setComments] = useState(0)
     const [activateHeart, setActivateHeart] = useState(true)
     const [activateQuestion, setActivateQuestion] = useState(false)
+    const detailedTextP = `Lorem ipsum dolor sit amet, consectetur 
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.`
     
     var numOfLikes = likes + ' likes';
     var numOfGoing = going + ' going';
@@ -72,10 +74,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText' id={activateHeart ? 'heartyes' : 'heartno'}>
@@ -103,10 +102,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
@@ -132,10 +128,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
@@ -161,10 +154,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
@@ -190,10 +180,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
@@ -219,10 +206,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
@@ -248,10 +232,7 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
                         <p>AgCenter Burger Bash Event!</p>
                     </div>
                     <div id='detailedText'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris </p>
+                        <p>{detailedTextP}</p>
                     </div>
                     <div id='bottomTag'>
                         <div className='IconAndText'>
