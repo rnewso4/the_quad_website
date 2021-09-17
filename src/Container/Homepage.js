@@ -1,6 +1,7 @@
 import Navbar from "./Navbar"
 import Sidebar from './Sidebar'
 import map from '../Images/LSUMap.png'
+import mapDark from '../Images/LSUMapDark.png'
 
 /**
  * 
@@ -32,8 +33,9 @@ const Homepage = ({ sidebarStyle, isSelected, setsidebarStyle, isDarkMode, setDa
             isDarkMode={isDarkMode}
             setDarkMode={setDarkMode}
             onClick={onClick}/>
-            <div className='homepage'>
-                <img src={map} alt='Quad logo' id={sidebarStyle ? 'mapMax' : 'mapMin'}/>
+            <div className={isDarkMode ? 'homepageDark' : 'homepage'}>
+                <img src={map} alt='Quad logo' className='mapLight' id={sidebarStyle ? 'mapMax' : 'mapMin'}/>
+                <img src={mapDark} alt='Quad logo' className='mapDark' id={sidebarStyle ? 'mapMax' : 'mapMin'}/>
             </div>
         </div>
     )

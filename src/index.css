@@ -135,7 +135,6 @@
   padding: 0;
   height: 3rem;
   width: 100vw;
-  border-bottom: 0.15em solid #d1d1d1;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -151,8 +150,7 @@
   padding: 0;
   height: 3rem;
   width: 100vw;
-  border-bottom: 0.15em solid #1E0738;
-  background-color: #1E0738;
+  background-color: #242424;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -173,7 +171,12 @@
   overflow: hidden;
 }
 
-#navbarLeft div:hover{
+#navbardark .navLeftContainers:hover{
+  cursor: pointer;
+  background-color: #6C6C6C;
+}
+
+#navbar .navLeftContainers:hover{
   cursor: pointer;
   background-color: lightgrey;
 }
@@ -188,7 +191,12 @@
   padding: 0 1rem;
 }
 
-#navbarRight:hover{
+#navbardark #navbarRight:hover{
+  cursor: pointer;
+  background-color: #6C6C6C;
+}
+
+#navbar #navbarRight:hover{
   cursor: pointer;
   background-color: lightgrey;
 }
@@ -220,18 +228,26 @@
   margin: 0.5rem auto;
 }
 
+#navbardark #dropMenuShow{
+  background-color: #242424;
+  color: white;
+}
+
+#navbar #dropMenuShow{
+  background-color: #f9f9f9;
+  color: black;
+}
+
 #dropMenuShow {
   display: block;
   position: fixed;
-  background-color: #f9f9f9;
   width: initial;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow: hidden;
   top: 0;
   right: 0;
-  color: black;
   align-items: center;
-  transition: all 2s ease;
+  transition: all 0.5s ease;
 }
 
 #dropMenu {
@@ -251,8 +267,15 @@
   font-size: 0.7rem;
 }
 
-.dropdownItems a{
+#navbardark .dropdownItems a{
+  color: white;
+}
+
+#navbar .dropdownItems a {
   color: black;
+}
+
+.dropdownItems a{
   align-items: center;
   text-decoration: none;
   font-size: 0.9rem;
@@ -265,27 +288,60 @@
 .dropdownItems {
   padding: 0 1rem;
   text-align: center;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 
-.dropdownItems:hover{
+#navbardark .dropdownItems:hover{
+  cursor: pointer;
+  background-color: #6C6C6C;
+}
+
+#navbar .dropdownItems:hover{
   cursor: pointer;
   background-color: lightgray;
 }
 
-#navbardark #darkMode {
+.SMIcon {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2.5rem;
+  margin: auto;
+}
+
+#navbar #darkMode {
   display: none;
 }
 
-#navbar #lightMode {
+#lightMode {
+  display: flex;
+  height: 2.5rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+#darkMode {
+  display: flex;
+  height: 2.5rem;
+  overflow: hidden;
+  align-items: center;
+}
+
+#navbardark #lightMode {
   display: none;
 }
 
-#navClose{
+#navbar #navClose{
   width: 2rem;
   height: 2rem;
   color: #853DD9;
+  display: inline;
+}
+
+#navbardark #navClose{
+  width: 2rem;
+  height: 2rem;
+  color: white;
   display: inline;
 }
 
@@ -299,7 +355,7 @@
   display:flex;
 }
 
-#signout {
+#navbar #signout {
   margin-left: 3.6rem;
   float: right;
   color: #853DD9;
@@ -307,18 +363,32 @@
   font-size: 0.9rem;
 }
 
+#navbardark #signout {
+  margin-left: 3.6rem;
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#sidebarDark .SideIconsSelected {
+  color: #B68EE5;
+}
+
+#sidebarLight .SideIconsSelected {
+  color: #853DD9;
+}
+
 .sidebarMin .SideIconsSelected {
   height: 1.5rem;
   width: 1.5rem;
   margin-left: 15%;
-  color: #853DD9;
 }
 
 .sidebarMax .SideIconsSelected {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 1rem;
-  color: #853DD9;
 }
 
 .sidebarMin .SideIcons {
@@ -341,6 +411,7 @@
   height: 100%;
   width: 10rem;
   transition: all 0.5s ease;
+  padding-top: 0.5rem;
 }
 
 #sidebarLight {
@@ -348,11 +419,16 @@
 }
 
 #sidebarDark {
-  background-color: #1E0738;
+  background-color: #101010;
 }
 
-.sidebarMax .linksNameSelected {
+#sidebarLight .linksNameSelected {
   color: #853DD9;
+  font-weight: bold;
+}
+
+#sidebarDark .linksNameSelected {
+  color: #B68EE5;
   font-weight: bold;
 }
 
@@ -442,18 +518,31 @@
   text-decoration: none;
 }
 
-.navList li:hover{
+
+#sidebarLight .navList li:hover{
   background-color: white;
 }
 
-.homepage #mapMin{
+#sidebarDark .navList li:hover{
+  background-color: #6C6C6C;
+}
+
+.homepage .mapDark {
+  display: none;
+}
+
+.homepageDark .mapLight {
+  display: none;
+}
+
+#mapMin{
   margin-top: 3rem;
   margin-left: 3rem;
   transition: all 0.5s ease;
   width: 110vw;
 }
 
-.homepage #mapMax{
+#mapMax{
   margin-top: 3rem;
   margin-left: 10rem;
   transition: all 0.5s ease;
@@ -539,11 +628,18 @@
   float: left;
 }
 
+#sidebarLight #settingsIconSelected {
+  color: #853DD9;
+}
+
+#sidebarDark #settingsIconSelected {
+  color: #B68EE5;
+}
+
 .sidebarMax #settingsIconSelected {
   height: 1.5rem;
   width: 1.5rem;
   float: left;
-  color: #853DD9;
 }
 
 .sidebarMin #bottomTagSidebar {
@@ -576,11 +672,10 @@
 .sidebarMin #settingsIconSelected {
   height: 1.5rem;
   width: 1.5rem;
-  color: #853DD9;
 }
 
-.sidebarMin #bottomTagSidebar div:hover {
-  background-color: white;
+#sidebarDark #settingsContainer:hover {
+  background-color: #6C6C6C;
 }
 
 .sidebarMin #contactLink{

@@ -48,7 +48,7 @@ const Sidebar = ({ isSelected, sidebarStyle, isDarkMode, setDarkMode, onClick}) 
             {/*Later, fix the sidebar to match the bottom tag of the login page so it doesn't look as bad on safari */}
             <div id='bottomTagSidebar'>
                 <Link to='/settings'>
-                    <div>
+                    <div id='settingsContainer'>
                         <IoSettingsOutline id={isSettings ? 'settingsIconSelected' : 'settingsIcon'}/>
                     </div>
                 </Link>
