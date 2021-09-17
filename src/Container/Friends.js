@@ -1,7 +1,7 @@
 import Navbar from "./Navbar"
 import Sidebar from './Sidebar'
 
-const Friends = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
+const Friends = ({ sidebarStyle, isSelected, setsidebarStyle, isDarkMode, setDarkMode }) => {
 
     isSelected[0] = false;
     isSelected[1] = false;
@@ -14,10 +14,14 @@ const Friends = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar 
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}/>
             <Sidebar 
             isSelected={isSelected}
             sidebarStyle={sidebarStyle}
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}
             onClick={onClick}/>
             <h1 className='temp'>Friends</h1>
         </div>

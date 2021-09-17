@@ -133,17 +133,34 @@
   position: fixed;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 3rem;
   width: 100vw;
   border-bottom: 0.15em solid #d1d1d1;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  color: #606060;
+  text-decoration: none;
+  line-height: 3rem;
+  transition: all 0.5s ease;
 }
 
-#navbar img{
+#navbardark {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 3rem;
+  width: 100vw;
+  border-bottom: 0.15em solid #1E0738;
+  background-color: #1E0738;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+#logoNavbar{
   max-height: 2rem;
   margin: 0.5rem auto;
   margin-left: 1rem;
@@ -153,12 +170,7 @@
 #navbarLeft div{
   padding: 0 1rem;
   transition: all 0.3s ease;
-}
-
-#navbar a{
-  color: #606060;
-  text-decoration: none;
-  line-height: 3rem;
+  overflow: hidden;
 }
 
 #navbarLeft div:hover{
@@ -167,8 +179,13 @@
 }
 
 #navbarRight {
-  padding: 0 1rem;
   transition: all 0.3s ease;
+  display: block;
+  overflow: hidden;
+}
+
+#navbarRight div:nth-child(1) {
+  padding: 0 1rem;
 }
 
 #navbarRight:hover{
@@ -180,7 +197,7 @@
   display: flex;
 }
 
-#navbar input{
+#navbarSearch{
   width: 30rem;
   min-height: 1.85rem;
   margin: 0.5rem auto;
@@ -192,7 +209,7 @@
   color: #5e5e5e;
 }
 
-#navbar input:focus{
+#navbarSearch:focus{
   outline:none;
 }
 
@@ -201,6 +218,93 @@
   height: 1.85rem;
   margin-right: 2rem;
   margin: 0.5rem auto;
+}
+
+#dropMenuShow {
+  display: block;
+  position: fixed;
+  background-color: #f9f9f9;
+  width: initial;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  color: black;
+  align-items: center;
+  transition: all 2s ease;
+}
+
+#dropMenu {
+  display: none;
+}
+
+#profile {
+  padding: 0 1rem;
+}
+
+#userName {
+  height: 1.2em;
+  font-size: 0.9rem;
+}
+
+#userEmail {
+  font-size: 0.7rem;
+}
+
+.dropdownItems a{
+  color: black;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#dropdownInnerContents {
+  transition: all 0.3s ease;
+}
+
+.dropdownItems {
+  padding: 0 1rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  font-size: 0.9rem;
+}
+
+.dropdownItems:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+#navbardark #darkMode {
+  display: none;
+}
+
+#navbar #lightMode {
+  display: none;
+}
+
+#navClose{
+  width: 2rem;
+  height: 2rem;
+  color: #853DD9;
+  display: inline;
+}
+
+#navClose:hover{
+  cursor: pointer;
+}
+
+#bottomNavbar {
+  height: 2rem;
+  align-items: center;
+  display:flex;
+}
+
+#signout {
+  margin-left: 3.6rem;
+  float: right;
+  color: #853DD9;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .sidebarMin .SideIconsSelected {
@@ -236,8 +340,15 @@
   position: fixed;
   height: 100%;
   width: 10rem;
-  background-color: #DBDBDB;
   transition: all 0.5s ease;
+}
+
+#sidebarLight {
+  background-color: #DBDBDB;
+}
+
+#sidebarDark {
+  background-color: #1E0738;
 }
 
 .sidebarMax .linksNameSelected {
@@ -262,9 +373,16 @@
   padding: 0.25rem 0.5rem;
   height: 100%;
   width: 3rem;
-  background-color: #DBDBDB;
   transition: all 0.5s ease;
   overflow: hidden;
+}
+
+#sidebarDark #menu {
+  color: white;
+}
+
+#sidebarDark #close {
+  color: white;
 }
 
 .sidebarMax #close {
@@ -273,7 +391,6 @@
   margin-left: 1%;
   position: relative;
   float: left;
-  color: #494949;
 }
 
 .sidebarMin #menu {
@@ -281,7 +398,6 @@
   height: 1.5rem;
   margin-left: 0.25rem;
   margin-bottom: 75%;
-  color: #494949;
 }
 
 #menu:hover{
@@ -312,9 +428,15 @@
   margin: 0.5rem 0px;
 }
 
-/*need to change color of friends icon to the correct color*/
-.navList li a{
+#sidebarDark .navList li a{
+  color: white;
+}
+
+#sidebarLight .navList li a{
   color: #606060;
+}
+
+.navList li a{
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -375,8 +497,23 @@
   display: none;
 }
 
-.sidebarMax #bottomTagSidebar {
+#sidebarDark #settingsIcon{
+  color: white;
+}
+
+#sidebarDark #contactLink{
+  color: white;
+}
+
+#sidebarLight #settingsIcon{
   color: #606060;
+}
+
+#sidebarLight #contactLink{
+  color: #606060;
+}
+
+.sidebarMax #bottomTagSidebar {
   display: flex;
   text-decoration: none;
   flex-grow: 1;
@@ -387,7 +524,6 @@
 }
 
 .sidebarMax #contactLink{
-  color: #494949;
   text-decoration: none;
   margin-left: 2rem;
   font-size: 1rem;
@@ -401,7 +537,6 @@
   height: 1.5rem;
   width: 1.5rem;
   float: left;
-  color: #494949;
 }
 
 .sidebarMax #settingsIconSelected {
@@ -520,7 +655,6 @@
   border-radius: 50%;
   border-color: #494949;
   color: #494949;
-  position: relative;
   float: right;
   border-width: 0.15rem;
   text-align: center;
@@ -606,7 +740,6 @@
   border-radius: 50%;
   border-color: #494949;
   color: #494949;
-  position: relative;
   float: right;
   border-width: 0.15rem;
   text-align: center;

@@ -10,7 +10,7 @@ import map from '../Images/LSUMap.png'
  * @returns 
  */
 
-const Homepage = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
+const Homepage = ({ sidebarStyle, isSelected, setsidebarStyle, isDarkMode, setDarkMode }) => {
 
     isSelected[0] = true;
     isSelected[1] = false;
@@ -23,10 +23,14 @@ const Homepage = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
 
     return (
         <div className="container">
-            <Navbar />
+            <Navbar 
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}/>
             <Sidebar 
             isSelected={isSelected}
             sidebarStyle={sidebarStyle}
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}
             onClick={onClick}/>
             <div className='homepage'>
                 <img src={map} alt='Quad logo' id={sidebarStyle ? 'mapMax' : 'mapMin'}/>

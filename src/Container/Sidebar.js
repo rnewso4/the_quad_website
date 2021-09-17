@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { IoSettingsOutline } from "react-icons/io5";
 import { IoCloseOutline } from "react-icons/io5";
 
-const Sidebar = ({ isSelected, onClick, sidebarStyle}) => {
+const Sidebar = ({ isSelected, sidebarStyle, isDarkMode, setDarkMode, onClick}) => {
     
     var isHomepage = isSelected[0];
     var isEvent = isSelected[1];
@@ -14,7 +14,7 @@ const Sidebar = ({ isSelected, onClick, sidebarStyle}) => {
     var isSettings = isSelected[3];
 
     return (
-        <div className={sidebarStyle ? 'sidebarMax' : 'sidebarMin'}>
+        <div className={sidebarStyle ? 'sidebarMax' : 'sidebarMin'} id={isDarkMode ? 'sidebarDark' : 'sidebarLight'}>
             <div className='sidebarTop'>
                 <span onClick={() => onClick()}>
                     <VscMenu id='menu'/>

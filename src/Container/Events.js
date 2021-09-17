@@ -7,7 +7,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { AiOutlineComment } from "react-icons/ai";
 import { useState } from 'react'
 
-const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
+const Events = ({ sidebarStyle, isSelected, setsidebarStyle, isDarkMode, setDarkMode }) => {
 
     const [likes, setLikes] = useState(100)
     const [going, setGoing] = useState(90)
@@ -55,14 +55,17 @@ const Events = ({ sidebarStyle, isSelected, setsidebarStyle }) => {
             setActivateQuestion(false)
         }
     }
-    
 
     return (
         <div>
-            <Navbar />
+            <Navbar 
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}/>
             <Sidebar 
             isSelected={isSelected}
             sidebarStyle={sidebarStyle}
+            isDarkMode={isDarkMode}
+            setDarkMode={setDarkMode}
             onClick={onClick}/>
             <div id={sidebarStyle ? 'eventMax' : 'eventMin'}>
                 <div className='eventItems' id='item1'>
