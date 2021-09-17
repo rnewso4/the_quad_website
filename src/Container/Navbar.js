@@ -7,7 +7,7 @@ import { IoMoonOutline } from "react-icons/io5";
 import { IoSunnyOutline } from "react-icons/io5";
 
 const Navbar = ({ isDarkMode, setDarkMode }) => {
-    const [isMenuShowing, setMenu] = useState(true)
+    const [isMenuShowing, setMenu] = useState(false)
     const onClick = () => {
         return setMenu(!isMenuShowing)
     }
@@ -19,16 +19,6 @@ const Navbar = ({ isDarkMode, setDarkMode }) => {
     return (
         <>
             <div id={isDarkMode ? 'navbardark' : 'navbar'}>
-                <svg width="0" height="0">
-                    <linearGradient id="sun-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-                        <stop stopColor="#7a6ded" offset="0%" />
-                        <stop stopColor="#591885" offset="100%" />
-                    </linearGradient>
-                    <linearGradient id="moon-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
-                        <stop stopColor="#7a47b5" offset="0%" />
-                        <stop stopColor="#f5e6ff" offset="100%" />
-                    </linearGradient>
-                </svg>
                 <div id='navbarLeft'>
                     <img src={ Q } alt='letter Q' id='logoNavbar'/>
                     <div className='navLeftContainers'>Find Events</div>
@@ -53,9 +43,21 @@ const Navbar = ({ isDarkMode, setDarkMode }) => {
                             <Link to="#">Account Settings</Link>
                         </div>
                         <div className='dropdownItems' id='darkMode' onClick={onToggle}>
+                            <svg width='0' height='0'>
+                             <linearGradient id="moon-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                                <stop stopColor="#7a47b5" offset="0%" />
+                                <stop stopColor="#f5e6ff" offset="100%" />
+                             </linearGradient>
+                            </svg>
                             <IoMoonOutline style={{ stroke: "url(#moon-gradient)" }} className='SMIcon'/>
                         </div>
                         <div className='dropdownItems' id='lightMode' onClick={onToggle}>
+                            <svg width="0" height="0">
+                             <linearGradient id="sun-gradient" x1="100%" y1="100%" x2="0%" y2="0%">
+                                <stop stopColor="#7a6ded" offset="0%" />
+                                <stop stopColor="#591885" offset="100%" />
+                             </linearGradient>
+                            </svg>
                             <IoSunnyOutline style={{ stroke: "url(#sun-gradient)" }} className='SMIcon' />
                         </div>
                         <div id='bottomNavbar'>
